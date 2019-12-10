@@ -12,6 +12,8 @@ body
     padding-right: 7%;
     color: #212121;
     margin-top: 5%;
+    display: flex;
+    flex-direction: column;
 }
 
 #cadre
@@ -23,7 +25,7 @@ body
 #nom
 {
     font-size: 450%;
-    margin-bottom: 0px;
+    margin: 0px;
     font-weight: 300;
     color: black;
 }
