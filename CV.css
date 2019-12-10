@@ -50,7 +50,7 @@ em
 
 .ligne
 {
-    text-align: left;
+    float: left;
     color: #00838F;
     width: 100%;
 }
@@ -186,11 +186,12 @@ h2
     body
     {
         flex-direction: column;
+        width: 100%;
     }
     
     #colonne
     {
-        width: auto;
+        width: 100%;
     }
 
     .bio
@@ -215,19 +216,12 @@ h2
     #corps, .para1, .para2, .comp
     {
         width: 100%;
-        font-size: 150%;
+        font-size: 100%;
     }
 
     .para
     {
         flex-direction: column;
         width: 100%;
-    }
-
-    .comp .fas
-    {
-        font-size: 25%;
-    }
-
-    
+    }  
 }
