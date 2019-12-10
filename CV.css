@@ -58,6 +58,7 @@ em
 #ligne1
 {
     width: 11%;
+    margin-top: 0%;
 }
 
 h1
@@ -110,9 +111,16 @@ h3
     font-style: italic;
 }
 
-.comp
+.recoContact
 {
     width: 50%;
+    margin-bottom: 7%;
+}
+
+.reco
+{
+    font-weight: bold;
+    margin-bottom: 2%;
 }
 
 #colonne
@@ -210,10 +218,10 @@ h2
 
     h1
     {
-        font-size: 190%;
+        font-size: 150%;
     }
 
-    #corps, .para1, .para2, .comp
+    #corps, .para1, .para2, .recoContact
     {
         width: 100%;
         font-size: 100%;
