@@ -59,7 +59,7 @@ em
 
 #ligne1
 {
-    width: 11%;
+    width: 4.5em;
     margin-top: 0%;
 }
 
@@ -187,7 +187,10 @@ h2
 #colonne .fas
 {
     font-size: 275%;
-    margin:5%
+    margin:3%;
+    padding: 3%;
+    border: 5px solid #212121;
+    border-radius: 100%;
 }
 
 @media all and (max-device-width: 480px)
