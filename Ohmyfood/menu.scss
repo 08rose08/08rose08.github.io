@@ -10,6 +10,7 @@ $couleur-texte-menuNote1: #F04A5E;
 $couleur-texte-menuNote2: #F78F6A;
 $couleur-back-menuChic: #FFF5FE;
 $couleur-texte-menuChic: #C77412;
+$couleur-texte-menuChic1: #A56799;
 $couleur-texte-menuChic2: #905BFD;
 $couleur-back-menuDelice: #F9F9F9;
 $couleur-texte-menuDelice: #0887FB;
@@ -19,13 +20,17 @@ $couleur-texte-menuPalette: #72BF56;
 $couleur-texte-menuPalette1: #3D9339;
 $couleur-texte-menuPalette2: #BFFF7E;
 
+body{
+    margin: 0;
+}
+
 .theme{
     background-color: $couleur-theme1;
     color: $couleur-theme2;
     text-align: center;
     padding: 1%;
     font-family: roboto;
-    font-size: 200%;
+    font-size: 180%;
     h1{
         margin: 0;
     }
@@ -79,23 +84,17 @@ $couleur-texte-menuPalette2: #BFFF7E;
     }
 }
 
-body{
-    margin: 0;
-}
-
-section{
-    display: flex;
-}
-
 .menu{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     &-prev{
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
     margin: 3%;
     box-shadow: 0 0 10px gray;
     text-align: center;
+    font-size: 150%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,9 +105,15 @@ section{
                 background: -webkit-linear-gradient(left, $couleur-texte-menuNote1, $couleur-texte-menuNote2);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                font-size: 150%;
             }
             &__titre{
                 font-family: 'Devonshire';
+                margin-top: 0.5em;
+            }
+            &__menu{
+                font-family: 'Kalam';
+                color: $couleur-texte-menuNote;
             }
         }
         &--chic{
@@ -118,6 +123,7 @@ section{
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 font-family: 'Croissant One';
+                font-size: 85%;
             }
             &__menu{
                 color: $couleur-texte-menuChic;
@@ -136,7 +142,6 @@ section{
             } 
         }
         &--palette{
-            color: $couleur-texte-menuPalette;
             &__titre{
                 background: -webkit-linear-gradient(top left, $couleur-texte-menuPalette1, $couleur-texte-menuPalette2);
                 -webkit-background-clip: text;
@@ -150,10 +155,59 @@ section{
     }
     &--lien{
         text-decoration: none;
+        font-family: 'Kalam';
     }
+}
+
+h2{
+    font-family: 'Roboto';
+    text-align: center;
 }
 
 .bloc{
     margin: 5%;
     box-shadow: 0 0 10px gray;
+    text-align: center;
+    padding: 10%;
+    &__fas{
+        font-size: 500%;
+    }
+    &__titre{
+        text-align: center;
+        font-size: 200%;
+        margin: 0.5em;
+    }
+    &__menu{
+        font-family: 'Kalam';
+        font-size: 120%;
+        &--chic{
+            font-family: 'Gelasio';
+        }
+        &__ssTitre{
+            font-weight: bold;
+            font-size: 150%;
+            display: flex;
+            justify-content: space-around;
+        }
+        &__plat{
+            display: flex;
+            justify-content: space-between;
+            &--prix{
+                font-weight: bold;
+            }
+            &--dessert{
+                flex-direction: column;
+                text-align: left;
+            }
+        }
+        &--chicEntree{
+            color: $couleur-texte-menuChic;
+        }
+        &--chicPlat{
+            color: $couleur-texte-menuChic1;
+        }
+        &--chicDessert{
+            color: $couleur-texte-menuChic2;
+        }
+    }
 }
