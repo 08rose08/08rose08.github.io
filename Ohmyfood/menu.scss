@@ -1,0 +1,159 @@
+/*variables thème*/
+$couleur-theme1:#579C87;
+$couleur-theme2:#FDCB46;
+$points-duree: 1000ms;
+$points-delay: $points-duree/3;
+/*variables menus*/
+$couleur-back-menuNote: #FCDFDB;
+$couleur-texte-menuNote: #3C1218;
+$couleur-texte-menuNote1: #F04A5E;
+$couleur-texte-menuNote2: #F78F6A;
+$couleur-back-menuChic: #FFF5FE;
+$couleur-texte-menuChic: #C77412;
+$couleur-texte-menuChic2: #905BFD;
+$couleur-back-menuDelice: #F9F9F9;
+$couleur-texte-menuDelice: #0887FB;
+$couleur-texte-menuDelice2:#0431DF;
+$couleur-back-menuPalette: #FDFFFD;
+$couleur-texte-menuPalette: #72BF56;
+$couleur-texte-menuPalette1: #3D9339;
+$couleur-texte-menuPalette2: #BFFF7E;
+
+.theme{
+    background-color: $couleur-theme1;
+    color: $couleur-theme2;
+    text-align: center;
+    padding: 1%;
+    font-family: roboto;
+    font-size: 200%;
+    h1{
+        margin: 0;
+    }
+    &__proch{
+        width: 43%;
+        margin: auto;
+        border-radius: 13px;
+        display: flex;
+        justify-content: center;
+        &__charge{
+            height: 30%;
+            display: flex;
+            animation: points $points-duree;
+            &--points{
+                @for $i from 1 through 3 {
+                    &--#{$i} {
+                        animation-delay: $points-delay * $i;
+                    }
+                }
+            }
+        }
+    }
+    &__foot{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1%;
+        &--w{
+            &:hover{
+                animation: wiggle 100ms;
+                animation-iteration-count: 2;
+            }
+        }
+    }
+}
+
+@keyframes points {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+
+}
+@keyframes wiggle {
+    25%{
+        transform: translateX(2%);
+    }
+    75%{
+        transform: translateX(-2%);
+    }
+}
+
+body{
+    margin: 0;
+}
+
+section{
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    &-prev{
+    width: 200px;
+    height: 300px;
+    margin: 3%;
+    box-shadow: 0 0 10px gray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        &--note{
+            background-color: $couleur-back-menuNote;
+            color: $couleur-texte-menuNote;
+            &__fas{
+                background: -webkit-linear-gradient(left, $couleur-texte-menuNote1, $couleur-texte-menuNote2);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            &__titre{
+                font-family: 'Devonshire';
+            }
+        }
+        &--chic{
+            background-color: $couleur-back-menuChic;
+            &__titre{
+                background: -webkit-linear-gradient(top left, $couleur-texte-menuChic, $couleur-texte-menuChic2);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: 'Croissant One';
+            }
+            &__menu{
+                color: $couleur-texte-menuChic;
+            }
+        }
+        &--delice{
+            background-color: $couleur-back-menuDelice;
+            &__titre{
+                background: -webkit-linear-gradient(top left, $couleur-texte-menuDelice2, $couleur-texte-menuDelice);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: 'Dancing Script';
+            }
+            &__menu{
+                color: $couleur-texte-menuDelice;
+            } 
+        }
+        &--palette{
+            color: $couleur-texte-menuPalette;
+            &__titre{
+                background: -webkit-linear-gradient(top left, $couleur-texte-menuPalette1, $couleur-texte-menuPalette2);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: 'Kaushan Script';
+            }
+            &__menu{
+                color: $couleur-texte-menuPalette;
+            }
+        }
+    }
+    &--lien{
+        text-decoration: none;
+    }
+}
+
+.bloc{
+    margin: 5%;
+    box-shadow: 0 0 10px gray;
+}

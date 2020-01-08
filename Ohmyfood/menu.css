@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/*variables thème*/
+/*variables menus*/
+.theme {
+  background-color: #579C87;
+  color: #FDCB46;
+  text-align: center;
+  padding: 1%;
+  font-family: roboto;
+  font-size: 200%;
+}
+
+.theme h1 {
+  margin: 0;
+}
+
+.theme__proch {
+  width: 43%;
+  margin: auto;
+  border-radius: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.theme__proch__charge {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: points 1000ms;
+          animation: points 1000ms;
+}
+
+.theme__proch__charge--points--1 {
+  -webkit-animation-delay: 333.33333ms;
+          animation-delay: 333.33333ms;
+}
+
+.theme__proch__charge--points--2 {
+  -webkit-animation-delay: 666.66667ms;
+          animation-delay: 666.66667ms;
+}
+
+.theme__proch__charge--points--3 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.theme__foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1%;
+}
+
+.theme__foot--w:hover {
+  -webkit-animation: wiggle 100ms;
+          animation: wiggle 100ms;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@-webkit-keyframes points {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@keyframes points {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@-webkit-keyframes wiggle {
+  25% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  75% {
+    -webkit-transform: translateX(-2%);
+            transform: translateX(-2%);
+  }
+}
+
+@keyframes wiggle {
+  25% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  75% {
+    -webkit-transform: translateX(-2%);
+            transform: translateX(-2%);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu-prev {
+  width: 200px;
+  height: 300px;
+  margin: 3%;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-prev--note {
+  background-color: #FCDFDB;
+  color: #3C1218;
+}
+
+.menu-prev--note__fas {
+  background: -webkit-linear-gradient(left, #F04A5E, #F78F6A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-prev--note__titre {
+  font-family: 'Devonshire';
+}
+
+.menu-prev--chic {
+  background-color: #FFF5FE;
+}
+
+.menu-prev--chic__titre {
+  background: -webkit-linear-gradient(top left, #C77412, #905BFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Croissant One';
+}
+
+.menu-prev--chic__menu {
+  color: #C77412;
+}
+
+.menu-prev--delice {
+  background-color: #F9F9F9;
+}
+
+.menu-prev--delice__titre {
+  background: -webkit-linear-gradient(top left, #0431DF, #0887FB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Dancing Script';
+}
+
+.menu-prev--delice__menu {
+  color: #0887FB;
+}
+
+.menu-prev--palette {
+  color: #72BF56;
+}
+
+.menu-prev--palette__titre {
+  background: -webkit-linear-gradient(top left, #3D9339, #BFFF7E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Kaushan Script';
+}
+
+.menu-prev--palette__menu {
+  color: #72BF56;
+}
+
+.menu--lien {
+  text-decoration: none;
+}
+
+.bloc {
+  margin: 5%;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+}
+/*# sourceMappingURL=menu.css.map */
