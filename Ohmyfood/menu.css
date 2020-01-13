@@ -154,6 +154,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: font-size 300ms ease-in-out;
+  transition: font-size 300ms ease-in-out;
+}
+
+.menu-prev:hover {
+  font-size: 175%;
 }
 
 .menu-prev--note {

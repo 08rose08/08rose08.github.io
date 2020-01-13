@@ -106,6 +106,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: font-size 300ms ease-in-out;
+    &:hover{
+        font-size: 175%;
+    }
         &--note{
             background-color: $couleur-back-menuNote;
             color: $couleur-texte-menuNote;
