@@ -1,8 +1,8 @@
 /*variables thème*/
 $couleur-theme1:#579C87;
 $couleur-theme2:#FDCB46;
-$points-duree: 1000ms;
-$points-delay: $points-duree/3;
+$points-duree: 1500ms;
+$points-delay: $points-duree/4;
 /*variables menus*/
 $couleur-back-menuNote: #FCDFDB;
 $couleur-texte-menuNote: #3C1218;
@@ -42,12 +42,12 @@ body{
         justify-content: center;
         font-size: 150%;
         &__charge{
-            height: 30%;
             display: flex;
-            animation: points $points-duree;
+            
             &--points{
                 @for $i from 1 through 3 {
                     &--#{$i} {
+                        animation: points $points-duree infinite;
                         animation-delay: $points-delay * $i;
                     }
                 }
