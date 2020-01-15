@@ -13,8 +13,9 @@ $couleur-texte-menuChic: #C77412;
 $couleur-texte-menuChic1: #A56799;
 $couleur-texte-menuChic2: #905BFD;
 $couleur-back-menuDelice: #F9F9F9;
-$couleur-texte-menuDelice: #0887FB;
-$couleur-texte-menuDelice2:#0431DF;
+$couleur-texte-menuDelice: #229DF9;
+$couleur-texte-menuDelice2:#0228DD;
+$couleur-texte-menuDelice3: #0670F3;
 $couleur-back-menuPalette: #FDFFFD;
 $couleur-texte-menuPalette: #72BF56;
 $couleur-texte-menuPalette1: #3D9339;
@@ -34,10 +35,15 @@ body{
     h1{
         margin: 0;
     }
+    &--lien{
+        text-decoration: none;
+        color: $couleur-theme2;
+    }
     &__proch{
         width: 43%;
+        min-width: 200px;
         border-radius: 13px;
-        margin: auto;
+        margin: 3% auto;
         display: flex;
         justify-content: center;
         font-size: 150%;
@@ -118,10 +124,15 @@ body{
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 font-size: 150%;
+                margin: 0 3%;
             }
             &__titre{
                 font-family: 'Devonshire';
                 margin-top: 0.5em;
+                &--fin{
+                    font-size: 200%;
+                    
+                }
             }
             &__menu{
                 font-family: 'Kalam';
@@ -135,7 +146,7 @@ body{
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 font-family: 'Croissant One';
-                font-size: 85%;
+                font-size: 75%;
             }
             &__menu{
                 color: $couleur-texte-menuChic;
@@ -176,6 +187,40 @@ h2{
     text-align: center;
 }
 
+p{
+    margin: 0;
+}
+
+.barre{
+    width: 30%;
+    background-color: $couleur-texte-menuNote;
+    height: 10px;
+    &--chic1{
+        background: $couleur-texte-menuChic;
+    }
+    &--chic2{
+        background: $couleur-texte-menuChic1;
+    }
+    &--chic3{
+        background: $couleur-texte-menuChic2;
+    }
+    &--delice1{
+        background: $couleur-texte-menuDelice;
+    }
+    &--delice2{
+        background: $couleur-texte-menuDelice3;
+    }
+    &--delice3{
+        background: $couleur-texte-menuDelice2;
+    }
+    &--palette1{
+        background: -webkit-linear-gradient(left, $couleur-texte-menuPalette1, $couleur-texte-menuPalette2);
+    }
+    &--palette2{
+        background: -webkit-linear-gradient(right, $couleur-texte-menuPalette1, $couleur-texte-menuPalette2);
+    }
+}
+
 .bloc{
     margin: 5%;
     box-shadow: 0 0 10px gray;
@@ -195,14 +240,14 @@ h2{
             font-family: 'Gelasio';
         }
         &__ssTitre{
+            display: flex;
+            justify-content: space-between;
             font-weight: bold;
-            font-size: 150%;
-            
-
+            font-size: 130%;
             align-items: center;
             width: auto;
-            margin: auto;
-            &--souligne{
+            margin: 7% auto 5%;
+            &--souligneN{
                 position: relative;
                 &::after{
                     content: '';
@@ -217,6 +262,74 @@ h2{
                 &:hover::after{
                     width: 100%;
                     left: 0;
+                }
+            }
+            &--souligneDP{
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 0;
+                    height: 3px;
+                    right: 0;
+                    background: black;
+                    transition: width 1s ease;
+                }
+                &:hover::after{
+                    width: 100%;
+                    left: 0;
+                }
+            }
+            &--souligneC{
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 0;
+                    height: 3px;
+                    right: 0;
+                    background: $couleur-texte-menuChic;
+                    transition: width 1s ease;
+                }
+                &:hover::after{
+                    width: 100%;
+                    left: 0;
+                }
+                &1{
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 0;
+                        height: 3px;
+                        right: 0;
+                        background: $couleur-texte-menuChic1;
+                        transition: width 1s ease;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+                &2{
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 0;
+                        height: 3px;
+                        right: 0;
+                        background: $couleur-texte-menuChic2;
+                        transition: width 1s ease;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                        left: 0;
+                    }
                 }
             }
         }
@@ -239,6 +352,20 @@ h2{
         }
         &--chicDessert{
             color: $couleur-texte-menuChic2;
+        }
+    }
+}
+
+@media all and (max-device-width: 480px){
+    body{
+        margin: 0 0 20%;
+    }
+    .menu-prev{
+        width: 40%;
+        height: 8.5em;
+        transition: none;
+        &:hover{
+            font-size: 150%;
         }
     }
 }

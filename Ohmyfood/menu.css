@@ -18,10 +18,16 @@ body {
   margin: 0;
 }
 
+.theme--lien {
+  text-decoration: none;
+  color: #FDCB46;
+}
+
 .theme__proch {
   width: 43%;
+  min-width: 200px;
   border-radius: 13px;
-  margin: auto;
+  margin: 3% auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,11 +181,16 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 150%;
+  margin: 0 3%;
 }
 
 .menu-prev--note__titre {
   font-family: 'Devonshire';
   margin-top: 0.5em;
+}
+
+.menu-prev--note__titre--fin {
+  font-size: 200%;
 }
 
 .menu-prev--note__menu {
@@ -196,7 +207,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Croissant One';
-  font-size: 85%;
+  font-size: 75%;
 }
 
 .menu-prev--chic__menu {
@@ -208,14 +219,14 @@ body {
 }
 
 .menu-prev--delice__titre {
-  background: -webkit-linear-gradient(top left, #0431DF, #0887FB);
+  background: -webkit-linear-gradient(top left, #0228DD, #229DF9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Dancing Script';
 }
 
 .menu-prev--delice__menu {
-  color: #0887FB;
+  color: #229DF9;
 }
 
 .menu-prev--palette__titre {
@@ -237,6 +248,48 @@ body {
 h2 {
   font-family: 'Roboto';
   text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.barre {
+  width: 30%;
+  background-color: #3C1218;
+  height: 10px;
+}
+
+.barre--chic1 {
+  background: #C77412;
+}
+
+.barre--chic2 {
+  background: #A56799;
+}
+
+.barre--chic3 {
+  background: #905BFD;
+}
+
+.barre--delice1 {
+  background: #229DF9;
+}
+
+.barre--delice2 {
+  background: #0670F3;
+}
+
+.barre--delice3 {
+  background: #0228DD;
+}
+
+.barre--palette1 {
+  background: -webkit-linear-gradient(left, #3D9339, #BFFF7E);
+}
+
+.barre--palette2 {
+  background: -webkit-linear-gradient(right, #3D9339, #BFFF7E);
 }
 
 .bloc {
@@ -266,20 +319,26 @@ h2 {
 }
 
 .bloc__menu__ssTitre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 130%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: auto;
-  margin: auto;
+  margin: 7% auto 5%;
 }
 
-.bloc__menu__ssTitre--souligne {
+.bloc__menu__ssTitre--souligneN {
   position: relative;
 }
 
-.bloc__menu__ssTitre--souligne::after {
+.bloc__menu__ssTitre--souligneN::after {
   content: '';
   position: absolute;
   display: block;
@@ -291,7 +350,91 @@ h2 {
   transition: width 1s ease;
 }
 
-.bloc__menu__ssTitre--souligne:hover::after {
+.bloc__menu__ssTitre--souligneN:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.bloc__menu__ssTitre--souligneDP {
+  position: relative;
+}
+
+.bloc__menu__ssTitre--souligneDP::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 3px;
+  right: 0;
+  background: black;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+.bloc__menu__ssTitre--souligneDP:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.bloc__menu__ssTitre--souligneC {
+  position: relative;
+}
+
+.bloc__menu__ssTitre--souligneC::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 3px;
+  right: 0;
+  background: #C77412;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+.bloc__menu__ssTitre--souligneC:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.bloc__menu__ssTitre--souligneC1 {
+  position: relative;
+}
+
+.bloc__menu__ssTitre--souligneC1::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 3px;
+  right: 0;
+  background: #A56799;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+.bloc__menu__ssTitre--souligneC1:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.bloc__menu__ssTitre--souligneC2 {
+  position: relative;
+}
+
+.bloc__menu__ssTitre--souligneC2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 3px;
+  right: 0;
+  background: #905BFD;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+.bloc__menu__ssTitre--souligneC2:hover::after {
   width: 100%;
   left: 0;
 }
@@ -327,5 +470,20 @@ h2 {
 
 .bloc__menu--chicDessert {
   color: #905BFD;
+}
+
+@media all and (max-device-width: 480px) {
+  body {
+    margin: 0 0 20%;
+  }
+  .menu-prev {
+    width: 40%;
+    height: 8.5em;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .menu-prev:hover {
+    font-size: 150%;
+  }
 }
 /*# sourceMappingURL=menu.css.map */
