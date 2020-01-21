@@ -153,6 +153,7 @@ body {
           box-shadow: 0 0 10px gray;
   text-align: center;
   font-size: 150%;
+  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,12 +164,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: font-size 300ms ease-in-out;
-  transition: font-size 300ms ease-in-out;
+  -webkit-transition: font-size 300ms ease-in-out, opacity 300ms ease-in-out;
+  transition: font-size 300ms ease-in-out, opacity 300ms ease-in-out;
 }
 
 .menu-prev:hover {
   font-size: 175%;
+  opacity: 0.8;
 }
 
 .menu-prev--note {
@@ -243,6 +245,10 @@ body {
 .menu--lien {
   text-decoration: none;
   font-family: 'Kalam';
+}
+
+.menu--lien--chic {
+  font-family: 'Gelasio';
 }
 
 h2 {

@@ -109,12 +109,14 @@ body{
     box-shadow: 0 0 10px gray;
     text-align: center;
     font-size: 150%;
+    opacity: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: font-size 300ms ease-in-out;
+    transition: font-size 300ms ease-in-out, opacity 300ms ease-in-out;
     &:hover{
         font-size: 175%;
+        opacity: 0.8;
     }
         &--note{
             background-color: $couleur-back-menuNote;
@@ -179,6 +181,9 @@ body{
     &--lien{
         text-decoration: none;
         font-family: 'Kalam';
+        &--chic{
+            font-family: 'Gelasio';
+        }
     }
 }
 
