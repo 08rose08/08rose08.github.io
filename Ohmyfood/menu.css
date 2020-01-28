@@ -491,5 +491,8 @@ p {
   .menu-prev:hover {
     font-size: 150%;
   }
+  .bloc__titre {
+    font-size: 250%;
+  }
 }
 /*# sourceMappingURL=menu.css.map */
