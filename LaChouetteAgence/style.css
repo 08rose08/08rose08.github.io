@@ -704,9 +704,18 @@ p {
     margin: auto auto auto auto;
 }
 
-h2 {
+h2, .para-important {
     font-size: 22px;
     line-height: 1.4em;
+}
+
+.citation {
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 13%;
+}
+.auteur {
+    font-size: 14px;
 }
 
 h3 {
@@ -1027,6 +1036,7 @@ h4 {
         height: 320px;
     }
 }
+
 
 @media (max-width: 400px) {
     .bloc {
