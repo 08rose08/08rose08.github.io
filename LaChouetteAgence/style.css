@@ -647,8 +647,7 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -707,15 +706,6 @@ p {
 h2, .para-important {
     font-size: 22px;
     line-height: 1.4em;
-}
-
-.citation {
-    font-size: 20px;
-    font-style: italic;
-    margin: 0 13%;
-}
-.auteur {
-    font-size: 14px;
 }
 
 h3 {
@@ -789,12 +779,12 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #222222!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #222222!important;
 }
 
 .ltc-white {
@@ -832,6 +822,21 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
+}
+
+.citation {
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 13%;
+}
+.auteur {
+    font-size: 14px;
+}
+.grisContraste, a {
+    color: #222222!important;
+}
+.partenaire, a{
+    text-decoration: underline;
 }
 
 @media (max-width: 1024px) {
