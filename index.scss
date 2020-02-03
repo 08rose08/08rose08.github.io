@@ -1,6 +1,14 @@
 .fond{
     background-color: #020020;
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    
+    &::before{
+        content: "";
+        position: relative;
+        background-image: url(img/ciel.png);
+        background-size: cover;
+    }
 }
 h1{
     text-shadow: 5px 0 10px #394164;
@@ -32,7 +40,10 @@ h1{
         &:hover{
             box-shadow: inset -3px -3px 10px #394164;
             filter: brightness(100%);
+            
+            
         }
+
     }
 }
 .cv{
@@ -58,4 +69,10 @@ h1{
 }
 .logo-chouette{
     width: 50%;
+}
+.fas{
+    color: #394164;
+    font-size: 150%;
+    transform: rotate(360deg);
+    
 }

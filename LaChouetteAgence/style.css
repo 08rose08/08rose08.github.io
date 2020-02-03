@@ -758,7 +758,7 @@ h4 {
 
 .bold-link {
     font-weight: 900;
-    text-decoration: underline!important;
+    text-decoration: underline!important; /*p4*/
 }
 
 .bgc-white {
@@ -779,12 +779,12 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #222222!important;
+    color: #222222!important; /*P4*/
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #222222!important;
+    color: #222222!important; /*P4*/
 }
 
 .ltc-white {
@@ -824,6 +824,7 @@ h4 {
     background-image: url("img/image-de-presentation.jpg");
 }
 
+/*modification P4*/
 .citation {
     font-size: 20px;
     font-style: italic;
