@@ -4,13 +4,6 @@
   position: absolute;
 }
 
-.fond::before {
-  content: "";
-  position: relative;
-  background-image: url(img/ciel.png);
-  background-size: cover;
-}
-
 h1 {
   text-shadow: 5px 0 10px #394164;
   font-size: 500%;
@@ -50,6 +43,7 @@ h1:hover {
   -webkit-box-shadow: 0 0 10px #394164;
           box-shadow: 0 0 10px #394164;
   text-align: center;
+  color: white;
   font-size: 150%;
   border-radius: 20px;
   -webkit-filter: brightness(50%);
