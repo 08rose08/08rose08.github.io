@@ -75,6 +75,40 @@ h1:hover {
 .ohmyfood {
   background-color: #579C87;
   color: #FDCB46;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ohmyfood__bloc_titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 30%;
+}
+
+.ohmyfood__bloc_medaille {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0;
+}
+
+.ohmyfood__medaille {
+  width: auto;
+  height: auto;
 }
 
 .lachouette {
@@ -94,5 +128,15 @@ h1:hover {
   font-size: 150%;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+@media all and (max-device-width: 480px) {
+  h1 {
+    text-shadow: 5px 0 10px #757EA9;
+  }
+  .portfolio__item {
+    -webkit-filter: none;
+            filter: none;
+  }
 }
 /*# sourceMappingURL=index.css.map */
