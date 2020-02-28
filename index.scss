@@ -37,15 +37,27 @@ h1{
         }
     }
 }
+h2{
+    font-size: 100%;
+    font-weight: normal;
+}
 .cv{
     background-color: #00838F;
     color: #FFFCF8;
+    &__flags{
+        flex-direction: row;
+        justify-content: space-around;
+        &--flag{
+            width: auto;
+            height: 75%;  
+        }
+    }
     &__profil{
-        width: 55%;
+        width: 40%;
         height: auto;
         border: 3px solid #212121;
         border-radius: 100%;
-        margin: 10%;
+        margin: 1%;
     }
 }
 .ohmyfood{
