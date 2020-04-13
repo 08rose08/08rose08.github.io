@@ -1,240 +1,131 @@
-body
-{
-    display: flex;
-    margin: 0px;
-    font-family: 'Roboto';
-    
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.bloc
-{
-    padding-left: 7%;
-    padding-right: 7%;
-    color: #212121;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
+.column {
+  background-color: darkblue;
+  color: white;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#cadre
-{
-    margin-top: 13%;
-    margin-bottom: 13%
+.column__photo {
+  width: 70%;
+  border: 1em solid white;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
 }
 
-#nom
-{
-    font-size: 450%;
-    margin: 0px;
-    font-weight: 300;
-    color: black;
+.column__description {
+  font-style: italic;
 }
 
-em
-{
-    color: #00838F;
-    font-style: normal;
-    font-weight: bold;
+.column__title {
+  background-color: midnightblue;
 }
 
-#sousTitre
-{
-    font-weight: bold;
-    font-size: 170%;
-    margin: 0px;
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
 }
 
-#corps
-{
-    width: 67%;
-    background-color: #FFFCF8;
+.main__1 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.ligne
-{
-    float: left;
-    color: #00838F;
-    width: 100%;
+.main__2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#ligne1
-{
-    width: 4.5em;
-    margin-top: 0%;
+.main__title {
+  color: white;
+  border-radius: 10%;
+  -webkit-box-shadow: 3px -3px 5px gray;
+          box-shadow: 3px -3px 5px gray;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  text-align: center;
+  margin: 0;
 }
 
-h1
-{
-    margin: 0px;
-    color: black;
+.main__title--rotation {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin: 0;
 }
 
-h1 .fas
-{
-    color: #00838F;
-    font-size: 120%;
-    padding-right: 4%;
+.main__title--skills {
+  background-color: deepskyblue;
 }
 
-.para .fas
-{
-    color: #00838F;
-    font-size :70%;
-    padding : 5%;
-    
+.main__title--projects {
+  background-color: forestgreen;
 }
 
-.para
-{
-    display: flex;
-    padding-top: 3%;
-    padding-bottom: 3%
+.main__title--education {
+  background-color: goldenrod;
 }
 
-.para1
-{
-    width: 33%;
-    font-weight: bold;
-    display: flex
+.main__title--experience {
+  background-color: indigo;
 }
 
-.para2
-{
-    width: 67%;
+.main__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
 }
 
-h3
-{
-    margin: 0;
+.main__content {
+  margin-left: 15%;
 }
 
-.job
-{
-    font-style: italic;
+.main__content--skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.recoContact
-{
-    width: 50%;
-    margin-bottom: 7%;
+.main__what {
+  font-weight: bold;
 }
 
-.reco
-{
-    font-weight: bold;
-    margin-bottom: 2%;
+.main__where {
+  font-style: italic;
 }
 
-#colonne
-{
-    width: 33%;
-    background-color: #00838F;
-    color:#212121;
-    font-weight: bold;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
+.main__details {
+  font-size: 80%;
 }
-
-#portrait
-{
-    text-align: center;
-    padding: 7%;
-    margin-bottom: 3%;
-    margin-top: 8%;
-}
-
-#photo
-{
-    width: 65%;
-    height: auto;
-    border: 5px solid #212121;
-    border-radius: 100%;
-}
-
-h2
-{
-    background-color: #212121;
-    color: #00838F;
-    text-align: center;
-    padding: 1%;
-    font-size: 170%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.bio
-{
-   padding: 8%;
-}
-
-#apropos
-{
-    flex: 1;
-}
-
-#blabla
-{
-    text-align: justify;
-    font-weight: normal;
-}
-
-#loisirs
-{
-    text-align: center;
-}
-
-#colonne .fas
-{
-    font-size: 275%;
-    margin:3%;
-    padding: 3%;
-    border: 5px solid #212121;
-    border-radius: 100%;
-}
-
-@media all and (max-device-width: 480px)
-{
-    /* Vos règles CSS pour les mobiles ici */
-    body
-    {
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    #colonne
-    {
-        width: 100%;
-    }
-
-    .bio
-    {
-        padding: 2%;
-    }
-
-    #colonne .fas
-    {
-        font-size: 275%;
-        margin-top:0;
-        margin-bottom: 0;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    h1
-    {
-        font-size: 150%;
-    }
-
-    #corps, .para1, .para2, .recoContact
-    {
-        width: 100%;
-        font-size: 100%;
-    }
-
-    .para
-    {
-        flex-direction: column;
-        width: 100%;
-    }  
-}
+/*# sourceMappingURL=cv.css.map */

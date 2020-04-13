@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    display: flex;
+}
+.column{
+    background-color: darkblue;
+    color: white;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__photo{
+        width: 70%;
+        border: 1em solid white;
+        
+        transform: rotate(-15deg);
+    }
+    &__description{
+        font-style: italic;
+    }
+    &__title{
+        background-color:midnightblue;
+        
+    }
+}
+
+.main{
+    display: flex;
+    width: 75%;
+    &__1{
+        flex-direction: column;
+    }
+    &__2{
+        flex-direction: column;
+    }
+    &__title{
+        color: white;
+        border-radius: 10%;
+        box-shadow:  3px -3px 5px gray;
+        
+        transform-origin: 0 100%;
+        transform: rotate(90deg);
+        text-align: center;
+        margin: 0;
+        &--rotation{
+            transform: rotate(180deg);
+            margin: 0;
+        }
+        &--skills{
+            background-color: deepskyblue;
+        }
+        &--projects{
+            background-color: forestgreen;
+        }
+        &--education{
+            background-color: goldenrod;
+        }
+        &--experience{
+            background-color: indigo;
+        }
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        }
+    &__content{
+        margin-left: 15%;
+        &--skills{
+            display: flex;
+            flex-direction: row;
+        }             
+    }
+    &__what{
+        font-weight: bold;
+    }
+    &__where{
+        font-style: italic;
+    }
+    &__details{
+        font-size: 80%;
+    }
+}
