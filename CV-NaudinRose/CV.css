@@ -3,6 +3,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: 'Karma', serif;
 }
 
 .column {

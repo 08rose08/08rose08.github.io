@@ -4,7 +4,7 @@
     position: absolute;
 }
 h1{
-    text-shadow: 5px 0 10px #394164;
+    text-shadow: 5px 0 10px #525c85;
     font-size: 500%;
     color: #020020;
     text-align: center;
@@ -12,6 +12,9 @@ h1{
     &:hover{
         text-shadow: 5px 0 10px #757EA9;
     }
+}
+.construction{
+    width: 7%;
 }
 .portfolio{
     display: flex;
@@ -90,6 +93,24 @@ h2{
 .logo-chouette{
     width: 50%;
 }
+
+.orinoco{
+    background-color: #f3e9f1;
+    &--titre{
+        width: 90%;
+    }
+    &--logo{
+        width: 50%;
+    } 
+}
+
+.sopekocko{
+    background-color: #FDEDDF;
+    &__logo{
+        width: 90%;
+    }
+}
+
 .fas{
     color: #394164;
     font-size: 150%;
